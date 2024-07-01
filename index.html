@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" style="height: 97%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar y Desencriptar Mensajes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img src="Imagenes/Frame 6.png" alt="" class="alura-logo">
+    <div class="flex-container">
+        <div class="container">
+            <textarea id="inputMessage" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="Warning-container">
+                <img src="Imagenes/Vector.svg" alt="Warning" class="Warning-image">
+                <p class="Warning">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button class="button-encrypt" onclick="encryptMessage()">Encriptar</button>
+                <button class="button-decrypt" onclick="decryptMessage()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="container-response">
+            <img src="Imagenes/Muñeco.png" alt="Placeholder" class="placeholder-image" id="placeholderImage">
+            <img src="Imagenes/Frame 5.png" alt="Secondary Placeholder" class="secondary-image" id="secondaryImage">
+            <textarea id="outputMessage" readonly class="Encrypted-text"></textarea>
+            <button class="button-decrypt" id="copyButton" onclick="copyMessage()">Copiar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
